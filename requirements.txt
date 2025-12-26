@@ -1,9 +1,9 @@
 python-telegram-bot==20.7
 pandas
 openpyxl==3.1.2
-fuzzywuzzy==0.18.0
-rapidfuzz
+thefuzz[speedup]
 apscheduler==3.10.4
 pytz==2023.3.post1
+
 
 
