@@ -1,3 +1,4 @@
+# force rebuild
 import json
 import os
 from datetime import datetime
@@ -278,4 +279,5 @@ class InventoryDatabase:
     def get_medicine_count(self) -> int:
         """Return total number of medicines."""
         return len(self.medicines)
+
 
