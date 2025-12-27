@@ -2,7 +2,8 @@ import json
 import os
 from datetime import datetime
 from typing import Optional, List, Dict, Tuple
-from fuzzywuzzy import fuzz, process
+from thefuzz import fuzz, process
+
 import pandas as pd
 from config import INVENTORY_FILE, DEFAULT_MIN_STOCK, LOW_STOCK_THRESHOLD, CRITICAL_STOCK_THRESHOLD
 
@@ -277,3 +278,4 @@ class InventoryDatabase:
     def get_medicine_count(self) -> int:
         """Return total number of medicines."""
         return len(self.medicines)
+
